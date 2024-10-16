@@ -1,0 +1,50 @@
+:root {
+  --amarillo: #d8c72b;
+  --negro: #000000;
+  --blanco: #ffffff;
+  --rojo: #ee0606;
+  --gris: #757575;
+  --azul: #0097a7;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.titulo {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--rojo);
+  font-size: 3.8rem;
+}
+.nav-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .nav-principal {
+    flex-direction: row;
+  }
+}
+
+.nav-principal a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.nav-principal a:hover {
+  background-color: var(--amarillo);
+  color: var(--negro);
+}
+.contenedor {
+  width: 120rem;
+  margin: 0 auto;
+}
+.nav-bg {
+  background-color: var(--azul);
+}
